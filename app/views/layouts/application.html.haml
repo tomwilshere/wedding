@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Wedding
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{:href => "https://use.typekit.net/mvo6exe.css", :rel => "stylesheet"}/
+    %link{:href => "/semantic/dist/semantic.min.css", :rel => "stylesheet"}/
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag '/semantic/dist/semantic.min.js'
+    = javascript_include_tag 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js'
+  %body{style: 'background-color: #FCE300'}
+    .ui.large.yellow.inverted.top.fixed.secondary.menu
+      .ui.container
+        = active_link_to root_path, class: 'item', active: :exact do
+          .ui.header Home
+        = active_link_to accommodation_path, class: 'item' do
+          .ui.header Info
+        = active_link_to rsvp_path, class: 'item' do
+          .ui.header RSVP
+        = active_link_to gifts_path, class: 'item' do
+          .ui.header Gifts
+    %div{style: 'margin-top: 140px'}
+      = yield

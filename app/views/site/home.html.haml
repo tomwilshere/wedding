@@ -1,0 +1,81 @@
+.ui.inverted.yellow.right.aligned.fitted.segment
+  .ui.container
+    .ui.two.column.stackable.grid
+      .column
+      .column
+        %h1.ui.black.huge.header Chin Chin!
+        %p.right.aligned
+          %span.ui.black.text You’re invited to the wedding of Tom Wilshere and Sarah Tue-Fee. 
+        %p
+          %span.ui.black.text
+            Please let us know if you will be attending before
+            %strong June 1st 2022.
+        = link_to 'RSVP', rsvp_path, class: 'ui grey button'
+    = image_tag 'chins', width: '900px', class: 'ui image'
+.ui.white.segment
+  .ui.container
+    %h1 Info
+    .ui.two.column.stackable.grid
+      .column
+        %h2 Accommodation
+        %p Guests can book rooms at the Frogmill or in the town of Cheltenham which is about a 15 min drive away.
+
+        %h2 DJ Requests
+        %p
+          Have a song you'd really like to hear? you can make song requests via
+          =link_to 'this link', 'https://google.com'
+      .column
+        %h2 Schedule
+        %p
+          12:00 - guests arrive
+          %br
+          1:00 - ceremony
+          %br
+          2:00 - Drinks Reception
+          %br
+          3:00 - wedding breakfast
+          %br
+          5:00 - speeches
+          %br
+          6:00 - dancing
+.ui.yellow.inverted.fitted.segment
+  .ui.container
+    %h1.ui.black.header RSVP
+    .ui.two.column.stackable.grid
+      .column
+        = form_tag 'https://usebasin.com/f/79a649fc7721', id: 'form', method: 'post', class: 'ui form', remote: true do
+          .field
+            %input{name: 'name', placeholder: 'Name(s)', required: true}
+          .field
+            %input{name: 'email', placeholder: 'Email', required: true}
+          .inline.fields
+            .field
+              .ui.radio.checkbox
+                %input{type: 'radio', name: 'can_attend', value: 'true', required: true}
+                %label Will attend
+            .field
+              .ui.radio.checkbox
+                %input{type: 'radio', name: 'can_attend', value: 'false', required: true}
+                %label Will not attend
+          .field
+            %textarea{name: 'dietary_requirements', placeholder: 'Message / Dietary Requirements', rows: 3, required: true}
+          %button#rsvp.ui.grey.button{type: 'submit'}
+            RSVP
+        #submit-message{style: 'display: none;'}
+          %h1.ui.black.header We've received your RSVP - Thank you :)
+          %p
+            %span.ui.black.text
+              Any questions or concerns please email stuefee@gmail.com
+      .column
+        = image_tag 'wine_glasses', width: '900px', class: 'ui image'
+.ui.white.center.aligned.segment
+  .ui.three.column.stackable.grid
+    .column
+      %p
+        A WTF Production
+    .column
+      %audio#player{controls: true, loop: true, style: 'display: none'}
+        %source{:src => "/everybody_in_love.mp3", :type => "audio/mpeg"}
+    .column
+      %p
+        &copy; 2021
