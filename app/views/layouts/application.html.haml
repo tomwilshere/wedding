@@ -15,13 +15,15 @@
   %body{style: 'background-color: #FCE300'}
     .ui.large.yellow.inverted.top.fixed.secondary.menu
       .ui.container
-        = active_link_to root_path, class: 'item', active: :exact do
+        = link_to '#home', class: 'item', active: :exact do
           .ui.header Home
-        = active_link_to accommodation_path, class: 'item' do
-          .ui.header Info
-        = active_link_to rsvp_path, class: 'item' do
-          .ui.header RSVP
-        = active_link_to gifts_path, class: 'item' do
+        = link_to '#plan', class: 'item' do
+          .ui.header Plan
+        = link_to '#gifts', class: 'item' do
           .ui.header Gifts
+        = link_to '#info', class: 'item' do
+          .ui.header Info
+        = link_to '#rsvp', class: 'item' do
+          .ui.header RSVP
     %div{style: 'margin-top: 140px'}
       = yield

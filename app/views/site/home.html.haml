@@ -1,4 +1,4 @@
-.ui.inverted.yellow.right.aligned.fitted.segment
+.ui.inverted.yellow.right.aligned.fitted.segment#home
   .ui.container
     .ui.two.column.stackable.grid
       .column
@@ -9,36 +9,73 @@
         %p
           %span.ui.black.text
             Please let us know if you will be attending before
-            %strong June 1st 2022.
+            %strong May 1st 2022.
         = link_to 'RSVP', rsvp_path, class: 'ui grey button'
     = image_tag 'chins', width: '900px', class: 'ui image'
-.ui.white.segment
+.ui.white.segment#plan
+  .ui.container
+    %h1 Here's the plan
+    .ui.two.column.stackable.grid
+      .column
+        %h2 Schedule
+        %p
+          12:00 - Guests arrive
+          %br
+          1:00 - Ceremony
+          %br
+          1:30 - Drinks reception + canapés
+          %br
+          4:00 - Wedding breakfast
+          %br
+          6:45 - Tea + coffee
+          %br
+          7:45 - First dance
+          %br
+          10:00 - Evening food + sparklers
+          %br
+          00:00 - Carriages
+
+      .column
+        %h2 Venue
+        .mapouter
+          .gmap_canvas
+            %iframe#gmap_canvas{frameborder: "0", height: "450", marginheight: "0", marginwidth: "0", scrolling: "no", src: "https://maps.google.com/maps?q=the%20frogmill%20inn&t=&z=11&ie=UTF8&iwloc=&output=embed", width: "450"}
+            %br/
+            :css
+              .mapouter{position:relative;text-align:right;height:450px;width:450px;}
+            :css
+              .gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}
+
+.ui.yellow.inverted.segment#gifts
+  .ui.container{ style: "background-image: url(#{asset_url('gifts.png')}); background-size: auto 100%; background-position: right; background-repeat: no-repeat;" }
+    .ui.two.column.stackable.grid
+      .column
+        %h1.ui.black.header You shouldn't have!
+        %span.ui.black.text
+          %p
+            But you probably will. So you can view our wish list via
+            = link_to 'this link', 'https://google.com'
+          %p
+            We are also happily accepting monetary gifts to go towards our honeymoon fund which can be given in person or via bank transfer or this paypal link
+      .column
+
+        
+
+.ui.white.segment#info
   .ui.container
     %h1 Info
     .ui.two.column.stackable.grid
       .column
         %h2 Accommodation
-        %p Guests can book rooms at the Frogmill or in the town of Cheltenham which is about a 15 min drive away.
+        %p Guests can book rooms at the Frogmill Inn or in the town of Cheltenham which is about a 15 min drive away.
 
         %h2 DJ Requests
         %p
           Have a song you'd really like to hear? you can make song requests via
           =link_to 'this link', 'https://google.com'
       .column
-        %h2 Schedule
-        %p
-          12:00 - guests arrive
-          %br
-          1:00 - ceremony
-          %br
-          2:00 - Drinks Reception
-          %br
-          3:00 - wedding breakfast
-          %br
-          5:00 - speeches
-          %br
-          6:00 - dancing
-.ui.yellow.inverted.fitted.segment
+        
+.ui.yellow.inverted.fitted.segment#rsvp
   .ui.container
     %h1.ui.black.header RSVP
     .ui.two.column.stackable.grid
@@ -78,4 +115,4 @@
         %source{:src => "/everybody_in_love.mp3", :type => "audio/mpeg"}
     .column
       %p
-        &copy; 2021
+        &copy; #{Date.current.year}
