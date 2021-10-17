@@ -1,83 +1,132 @@
-.ui.inverted.yellow.right.aligned.fitted.segment#home
+.ui.inverted.yellow.right.aligned.fitted.segment.full-height#home
   .ui.container
     .ui.two.column.stackable.grid
       .column
+        %h1{style: "font-size: 120px; text-align: left; vertical-align: top; margin-bottom: 0"}
+          Chin
+        %h1{style: "font-size: 120px; text-align: center; vertical-align: top; margin-top: 0;"}
+          Chin!
+        %h1
+          &nbsp;
       .column
-        %h1.ui.black.huge.header Chin Chin!
         %p.right.aligned
-          %span.ui.black.text You’re invited to the wedding of Tom Wilshere and Sarah Tue-Fee. 
+          %span You’re invited to the wedding of Tom Wilshere and Sarah Tue-Fee. 
         %p
-          %span.ui.black.text
+          %span
             Please let us know if you will be attending before
             %strong May 1st 2022.
-        = link_to 'RSVP', rsvp_path, class: 'ui grey button'
-    = image_tag 'chins', width: '900px', class: 'ui image'
-.ui.white.segment#plan
+        = link_to 'RSVP', '#rsvp', class: 'ui grey button', data: { turbolinks: false }
+  = image_tag 'chins', class: 'ui bottom-aligned image'
+.ui.white.segment.full-height#plan
   .ui.container
     %h1 Here's the plan
     .ui.two.column.stackable.grid
       .column
         %h2 Schedule
-        %p
-          12:00 - Guests arrive
-          %br
-          1:00 - Ceremony
-          %br
-          1:30 - Drinks reception + canapés
-          %br
-          4:00 - Wedding breakfast
-          %br
-          6:45 - Tea + coffee
-          %br
-          7:45 - First dance
-          %br
-          10:00 - Evening food + sparklers
-          %br
-          00:00 - Carriages
+        .ui.list
+          .item
+            .content
+              .header
+                12:00
+              .description
+                Guests arrive
+          .item
+            .content
+              .header
+                1:00
+              .description
+                Ceremony
+          .item
+            .content
+              .header
+                1:30
+              .description
+                Drinks reception + canapés
+          .item
+            .content
+              .header
+                4:00
+              .description
+                Wedding breakfast
+          .item
+            .content
+              .header
+                6:45
+              .description
+                Tea + coffee
+          .item
+            .content
+              .header
+                7:45
+              .description
+                First dance
+          .item
+            .content
+              .header
+                10:00
+              .description
+                Evening food + sparklers
+          .item
+            .content
+              .header
+                00:00
+              .description
+                Carriages
 
       .column
         %h2 Venue
-        .mapouter
-          .gmap_canvas
-            %iframe#gmap_canvas{frameborder: "0", height: "450", marginheight: "0", marginwidth: "0", scrolling: "no", src: "https://maps.google.com/maps?q=the%20frogmill%20inn&t=&z=11&ie=UTF8&iwloc=&output=embed", width: "450"}
-            %br/
-            :css
-              .mapouter{position:relative;text-align:right;height:450px;width:450px;}
-            :css
-              .gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}
+        .gmap_canvas
+          %iframe#gmap_canvas{frameborder: "0", height: "350px", marginheight: "0", marginwidth: "0", scrolling: "no", src: "https://maps.google.com/maps?q=the%20frogmill%20inn&t=&z=11&ie=UTF8&iwloc=&output=embed", width: "100%"}
 
-.ui.yellow.inverted.segment#gifts
-  .ui.container{ style: "background-image: url(#{asset_url('gifts.png')}); background-size: auto 100%; background-position: right; background-repeat: no-repeat;" }
+.ui.yellow.inverted.segment.full-height#gifts{ style: "background-image: url(#{asset_url('gifts.png')}); background-size: 50%; background-position: right; background-repeat: no-repeat;" }
+  .ui.container
     .ui.two.column.stackable.grid
       .column
-        %h1.ui.black.header You shouldn't have!
-        %span.ui.black.text
+        %h1.ui.header You shouldn't have!
+        %span
           %p
             But you probably will. So you can view our wish list via
             = link_to 'this link', 'https://google.com'
           %p
             We are also happily accepting monetary gifts to go towards our honeymoon fund which can be given in person or via bank transfer or this paypal link
-      .column
 
-        
-
-.ui.white.segment#info
+.ui.white.segment.full-height#info
   .ui.container
     %h1 Info
     .ui.two.column.stackable.grid
       .column
         %h2 Accommodation
-        %p Guests can book rooms at the Frogmill Inn or in the town of Cheltenham which is about a 15 min drive away.
-
-        %h2 DJ Requests
         %p
-          Have a song you'd really like to hear? you can make song requests via
-          =link_to 'this link', 'https://google.com'
+          Guests can book one of the beautiful rooms at the
+          = link_to 'Frogmill Inn', 'https://direct-book.com/frog-mill-shipton/properties/thefrogmilhoteldirect?locale=en&checkInDate=2022-08-13&check_in_date_view=13%20Aug%202022&checkOutDate=2022-08-14&check_out_date_view=14%20Aug%202022&commit=%EF%84%B8%20Check%20Availability&from_widget=true&utf8=%E2%9C%93&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=GBP&promocode=TueFeeandWilshere'
+          at a preferred rate.
+        %p
+          or in the town of Cheltenham which is about a 15 min drive away.
+        %h2 Taxis
+        %p We recommend booking a taxi in advance if required.
+        %p
+          A2B Private Hire:
+          = link_to '01242 580580', 'tel:01242 580580'
+          %br
+          Starline Taxis:
+          = link_to '01242 250250', 'tel:01242 250250'
+          %br
+          Andy Cars:
+          = link_to '0800 0121959', 'tel:0800 0121959'
+
       .column
+        %h2 Music Requests
+        %p
+          Let us know what songs will get you out on the dance floor!
+        = form_tag 'https://usebasin.com/f/79a649fc7721', id: 'form', method: 'post', class: 'ui inverted form', remote: true do
+          .field
+            %textarea{name: 'music request', placeholder: "Suggestions e.g. 'Everybody in Love' by JLS", rows: 3, required: true, style: 'background-color: #FCE300; border: none; resize: none;'}
+          %button#rsvp.ui.grey.button{type: 'submit'}
+            REQUEST
         
-.ui.yellow.inverted.fitted.segment#rsvp
+.ui.yellow.inverted.fitted.segment.full-height#rsvp
   .ui.container
-    %h1.ui.black.header RSVP
+    %h1.ui.header RSVP
     .ui.two.column.stackable.grid
       .column
         = form_tag 'https://usebasin.com/f/79a649fc7721', id: 'form', method: 'post', class: 'ui form', remote: true do
@@ -99,12 +148,12 @@
           %button#rsvp.ui.grey.button{type: 'submit'}
             RSVP
         #submit-message{style: 'display: none;'}
-          %h1.ui.black.header We've received your RSVP - Thank you :)
+          %h1.ui.header We've received your RSVP - Thank you :)
           %p
-            %span.ui.black.text
+            %span
               Any questions or concerns please email stuefee@gmail.com
       .column
-        = image_tag 'wine_glasses', width: '900px', class: 'ui image'
+        = image_tag 'wine_glasses', class: 'ui fluid image'
 .ui.white.center.aligned.segment
   .ui.three.column.stackable.grid
     .column

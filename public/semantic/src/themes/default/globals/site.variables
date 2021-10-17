@@ -44,8 +44,8 @@
 /* See Power-user section below
    for explanation of @px variables
 */
-@relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @4px;
+@relativeBorderRadius: @relative10px;
+@absoluteBorderRadius: @10px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -131,7 +131,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@textColor           : #404040;
 
 /*-------------------
       Paragraph
