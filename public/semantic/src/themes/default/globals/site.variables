@@ -23,8 +23,8 @@
 @googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}&display=@{googleFontDisplay}';
 
 
-@bold              : bold;
-@normal            : normal;
+@bold              : 700;
+@normal            : 300;
 
 /*-------------------
       Base Sizes
@@ -144,8 +144,8 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
-@linkUnderline       : none;
+@linkColor           : @black;
+@linkUnderline       : underline;
 @linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
 @linkHoverUnderline  : @linkUnderline;
 

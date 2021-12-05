@@ -27,7 +27,7 @@
   padding: 0.39285714em 1.5em 0.39285714em;
   text-transform: none;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1em;
   font-style: normal;
   text-align: center;
@@ -805,12 +805,12 @@
 .ui.basic.button {
   background: transparent none;
   color: rgba(0, 0, 0, 0.6);
-  font-weight: normal;
+  font-weight: 300;
   border-radius: 0.35714286rem;
   text-transform: none;
   text-shadow: none !important;
-  -webkit-box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset;
-          box-shadow: 0 0 0 1px rgba(34, 36, 38, 0.15) inset;
+  -webkit-box-shadow: 0 8px 15px 1px rgba(34, 36, 38, 0.15) inset;
+          box-shadow: 0 8px 15px 1px rgba(34, 36, 38, 0.15) inset;
 }
 .ui.basic.buttons {
   -webkit-box-shadow: none;
@@ -1104,8 +1104,8 @@
   height: 1.39285714em;
   line-height: 1.39285714em;
   color: rgba(0, 0, 0, 0.4);
-  font-style: normal;
-  font-weight: bold;
+  font-style: 300;
+  font-weight: 700;
   -webkit-box-shadow: 0 0 0 1px transparent inset;
           box-shadow: 0 0 0 1px transparent inset;
 }

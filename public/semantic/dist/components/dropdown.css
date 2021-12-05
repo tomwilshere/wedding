@@ -125,7 +125,7 @@
   color: #404040;
   padding: 0.78571429rem 1.14285714rem !important;
   text-transform: none;
-  font-weight: normal;
+  font-weight: 300;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-touch-callout: none;
@@ -173,7 +173,7 @@
 .ui.dropdown .menu > .header {
   margin: 1rem 0 0.75rem;
   padding: 0 1.14285714rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .ui.dropdown .menu > .header:not(.ui) {
@@ -237,7 +237,7 @@
 
 .ui.dropdown .menu > .message {
   padding: 0.78571429rem 1.14285714rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 .ui.dropdown .menu > .message:not(.ui) {
   color: rgba(0, 0, 0, 0.4);
@@ -583,7 +583,7 @@ select.ui.dropdown {
 
 /* Visible */
 .ui.selection.visible.dropdown > .text:not(.default) {
-  font-weight: normal;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -925,7 +925,7 @@ select.ui.dropdown {
   vertical-align: baseline;
 }
 .ui.inline.dropdown > .text {
-  font-weight: bold;
+  font-weight: 700;
 }
 .ui.inline.dropdown .menu {
   cursor: auto;
@@ -947,7 +947,7 @@ select.ui.dropdown {
 /* Menu Item Active */
 .ui.dropdown .menu .active.item {
   background: transparent;
-  font-weight: bold;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.95);
   -webkit-box-shadow: none;
           box-shadow: none;

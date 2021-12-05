@@ -172,7 +172,7 @@ ol.ui.list ol li,
   display: block;
   margin: 0;
   font-family: 'moret', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   color: #404040;
 }
 
@@ -193,11 +193,11 @@ ol.ui.list ol li,
 .ui.list .list > a.item,
 .ui.list > a.item {
   cursor: pointer;
-  color: #4183C4;
+  color: #404040;
 }
 .ui.list .list > a.item:hover,
 .ui.list > a.item:hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /* Linked Item Icons */
@@ -212,11 +212,11 @@ ol.ui.list ol li,
 .ui.list .list > .item a.header,
 .ui.list > .item a.header {
   cursor: pointer;
-  color: #4183C4 !important;
+  color: #404040 !important;
 }
 .ui.list .list > .item > a.header:hover,
 .ui.list > .item > a.header:hover {
-  color: #1e70bf !important;
+  color: #412c2c !important;
 }
 
 /* Floated Content */
@@ -392,7 +392,7 @@ ol.ui.list ol li,
 }
 .ui.inverted.list .list > a.item:hover,
 .ui.inverted.list > a.item:hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /* Linking Content */
@@ -400,7 +400,7 @@ ol.ui.list ol li,
   color: rgba(255, 255, 255, 0.9) !important;
 }
 .ui.inverted.list .item a:not(.ui):hover {
-  color: #1e70bf !important;
+  color: #412c2c !important;
 }
 
 /*-------------------
@@ -578,7 +578,7 @@ ul.ui.list li:before,
   position: absolute;
   top: auto;
   left: auto;
-  font-weight: normal;
+  font-weight: 300;
   margin-left: -1.25rem;
   content: '\2022';
   opacity: 1;

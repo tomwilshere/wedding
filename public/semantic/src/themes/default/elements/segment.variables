@@ -8,7 +8,7 @@
 
 @background: @white;
 @borderWidth: 1px;
-@border: @borderWidth solid @borderColor;
+@border: none
 
 @boxShadow: @subtleShadow;
 @verticalPadding: 1em;
@@ -18,7 +18,7 @@
 @verticalMargin: 0;
 @horizontalMargin: 0;
 @margin: @verticalMargin @horizontalMargin;
-@borderRadius: @defaultBorderRadius;
+@borderRadius: 0;
 
 /*-------------------
        Group
@@ -27,7 +27,7 @@
 @groupedMargin: @margin;
 @groupedBorder: @border;
 @groupedBoxShadow: @boxShadow;
-@groupedBorderRadius: @borderRadius;
+@groupedBorderRadius: 0;
 
 @nestedGroupMargin: @verticalMargin @verticalMargin;
 

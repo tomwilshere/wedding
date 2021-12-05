@@ -8,22 +8,25 @@
     = csp_meta_tag
     %link{:href => "https://use.typekit.net/mvo6exe.css", :rel => "stylesheet"}/
     %link{:href => "/semantic/dist/semantic.min.css", :rel => "stylesheet"}/
+    %link{:href => "/favicon.ico", :rel => "icon", :sizes => "any"}
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     = javascript_include_tag '/semantic/dist/semantic.min.js'
     = javascript_include_tag 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js'
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body{style: 'background-color: #FCE300'}
-    .ui.large.yellow.inverted.top.fixed.secondary.menu
+    #menu.ui.large.yellow.inverted.top.fixed.secondary.menu
       .ui.container
-        = link_to '#home', class: 'item', data: { turbolinks: false } do
+        = link_to '#home', class: 'item scroll-click', data: { turbolinks: false } do
           .ui.header Home
-        = link_to '#plan', class: 'item', data: { turbolinks: false } do
+        = link_to '#plan', class: 'item scroll-click', data: { turbolinks: false } do
           .ui.header Plan
-        = link_to '#gifts', class: 'item', data: { turbolinks: false } do
+        = link_to '#gifts', class: 'item scroll-click', data: { turbolinks: false } do
           .ui.header Gifts
-        = link_to '#info', class: 'item', data: { turbolinks: false } do
+        = link_to '#info', class: 'item scroll-click', data: { turbolinks: false } do
           .ui.header Info
-        = link_to '#rsvp', class: 'item', data: { turbolinks: false } do
+        = link_to '#rsvp', class: 'item scroll-click', data: { turbolinks: false } do
           .ui.header RSVP
+        = link_to '#music', class: 'item scroll-click', data: { turbolinks: false } do
+          .ui.header Music
     %div{style: "margin-top: 45px"}
       = yield

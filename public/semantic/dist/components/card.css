@@ -177,7 +177,7 @@
 /* Default Header Size */
 .ui.cards > .card > .content > .header:not(.ui),
 .ui.card > .content > .header:not(.ui) {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.28571429em;
   margin-top: -0.21425em;
   line-height: 1.28571429em;
@@ -308,7 +308,7 @@
 }
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /* Meta */
@@ -427,7 +427,7 @@
 }
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 
@@ -1323,7 +1323,7 @@ a.ui.card:hover,
 }
 .ui.inverted.cards > .card > .content > a.header:hover,
 .ui.inverted.card > .content > a.header:hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /* Description */
@@ -1358,7 +1358,7 @@ a.ui.card:hover,
 }
 .ui.inverted.cards > .card > .extra a:not(.ui):hover,
 .ui.inverted.card > .extra a:not(.ui):hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /* Link card(s) */

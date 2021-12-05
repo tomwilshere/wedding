@@ -29,6 +29,7 @@ body {
   background: #FFFFFF;
   font-family: 'calmetta', sans-serif;
   font-size: 28px;
+  font-weight: 300;
   line-height: 1.4285em;
   color: #404040;
 }
@@ -46,7 +47,7 @@ h5 {
   font-family: 'moret', sans-serif;
   line-height: 1.28571429em;
   margin: calc(2rem - 0.1428571428571429em) 0 1rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0;
 }
 h1 {
@@ -101,12 +102,13 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #4183C4;
-  text-decoration: none;
+  color: #404040;
+  text-decoration: underline;
+  font-weight: 700;
 }
 a:hover {
-  color: #1e70bf;
-  text-decoration: none;
+  color: #412c2c;
+  text-decoration: underline;
 }
 
 

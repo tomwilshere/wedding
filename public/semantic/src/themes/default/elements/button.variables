@@ -200,7 +200,7 @@
 @basicBackground: transparent none;
 @basicFontWeight: @normal;
 @basicBorder: 1px solid @borderColor;
-@basicBoxShadow: 0 0 0 @basicBorderSize @borderColor inset;
+@basicBoxShadow: 0 8px 15px @basicBorderSize @borderColor inset;
 @basicLoadingColor: @offWhite;
 @basicTextTransform: none;
 

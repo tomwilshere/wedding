@@ -3,14 +3,14 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
+import Rails from "@rails/ujs";
+import Turbolinks from "turbolinks";
+import * as ActiveStorage from "@rails/activestorage";
+import "channels";
 
-Rails.start()
-Turbolinks.start()
-ActiveStorage.start()
+Rails.start();
+Turbolinks.start();
+ActiveStorage.start();
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -18,15 +18,16 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
 
-$(function() {
-  $('.ui.checkbox').checkbox();
+$(function () {
+  $(".ui.checkbox").checkbox();
+  console.log("js loaded");
 
-  $('#form').on('submit', function() {
-    $('#player').show();
-    $('#player')[0].play();
-    var confettiGun = setInterval(function() {
+  $("#rsvp-form").on("submit", function (e) {
+    $("#player").show();
+    $("#player")[0].play();
+    var confettiGun = setInterval(function () {
       confetti({
-        angle: getRandomInt(45,135),
+        angle: getRandomInt(45, 135),
         particleCount: 150,
         startVelocity: 60,
         spread: 110,
@@ -35,11 +36,22 @@ $(function() {
       });
     }, 857);
 
-    setTimeout(function() {
-      clearInterval(confettiGun)
-    }, 20000)
+    setTimeout(function () {
+      clearInterval(confettiGun);
+    }, 20000);
 
-    $('#form').hide();
+    $("#rsvp-form").hide();
     $("#submit-message").show();
   });
-})
+
+  $("#music-form").on("submit", function (e) {
+    $("#music-submit-message").show();
+  });
+
+  $("a[href^=\\#]").on('click', function (e) {
+    e.preventDefault();
+    var dest = $(this).attr("href");
+    var menuHeight = $('#menu').height();
+    $("html,body").animate({ scrollTop: $(dest).offset().top - menuHeight }, "slow");
+  });
+});

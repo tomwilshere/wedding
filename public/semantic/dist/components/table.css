@@ -73,7 +73,7 @@
   padding: 0.92857143em 0.78571429em;
   vertical-align: inherit;
   font-style: none;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: none;
   border-bottom: 1px solid rgba(34, 36, 38, 0.1);
   border-left: none;
@@ -105,8 +105,8 @@
   color: #404040;
   padding: 0.78571429em 0.78571429em;
   vertical-align: inherit;
-  font-style: normal;
-  font-weight: normal;
+  font-style: 300;
+  font-weight: 300;
   text-transform: none;
 }
 .ui.table > tfoot > tr > th:first-child,
@@ -225,7 +225,7 @@
   .ui.table:not(.unstackable) > tr > td:first-child,
   .ui.table:not(.unstackable) > tbody > tr > td:first-child,
   .ui.table:not(.unstackable) > tfoot > tr > td:first-child {
-    font-weight: bold;
+    font-weight: 700;
   }
   
 /* Definition Table */
@@ -533,7 +533,7 @@
 .ui.definition.table > thead:not(.full-width) > tr > th:first-child {
   pointer-events: none;
   background: #FFFFFF;
-  font-weight: normal;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: -0.1em -0.2em 0 0.1em #FFFFFF;
           box-shadow: -0.1em -0.2em 0 0.1em #FFFFFF;
@@ -545,7 +545,7 @@
 .ui.definition.table > tfoot:not(.full-width) > tr > th:first-child {
   pointer-events: none;
   background: #FFFFFF;
-  font-weight: normal;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: -0.1em 0.2em 0 0.1em #FFFFFF;
           box-shadow: -0.1em 0.2em 0 0.1em #FFFFFF;
@@ -558,7 +558,7 @@
 .ui.definition.table > tfoot > tr > td:first-child:not(.ignored),
 .ui.definition.table tr td.definition {
   background: rgba(0, 0, 0, 0.03);
-  font-weight: bold;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.95);
   text-transform: '';
   -webkit-box-shadow: '';
@@ -1886,7 +1886,7 @@
 .ui.sortable.table > thead > tr > th:after {
   display: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   text-decoration: inherit;
   content: '';
   height: 1em;

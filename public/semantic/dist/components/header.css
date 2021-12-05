@@ -20,7 +20,7 @@
   margin: calc(2rem - 0.1428571428571429em) 0 1rem;
   padding: 0 0;
   font-family: 'moret', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.28571429em;
   text-transform: none;
   color: #404040;
@@ -38,7 +38,7 @@
 
 .ui.header .sub.header {
   display: block;
-  font-weight: normal;
+  font-weight: 300;
   padding: 0;
   margin: 0;
   font-size: 1rem;
@@ -247,7 +247,7 @@ h6.ui.header .sub.header {
 .ui.sub.header {
   padding: 0;
   margin-bottom: 0.07142857rem;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.85714286em;
   text-transform: uppercase;
   color: '';

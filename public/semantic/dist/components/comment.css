@@ -106,13 +106,13 @@
 .ui.comments .comment .author {
   font-size: 1em;
   color: #404040;
-  font-weight: bold;
+  font-weight: 700;
 }
 .ui.comments .comment a.author {
   cursor: pointer;
 }
 .ui.comments .comment a.author:hover {
-  color: #1e70bf;
+  color: #412c2c;
 }
 
 /*--------------

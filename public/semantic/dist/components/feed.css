@@ -116,9 +116,9 @@
   margin: -0.5rem 0 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.4);
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1em;
-  font-style: normal;
+  font-style: 300;
 }
 
 /*--------------
@@ -128,7 +128,7 @@
 .ui.feed > .event > .content .summary {
   margin: 0;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 700;
   color: #404040;
 }
 
@@ -148,7 +148,7 @@
 
 .ui.feed > .event > .content .user {
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 0;
   vertical-align: baseline;
 }
@@ -168,9 +168,9 @@
 .ui.feed > .event > .content .summary > .date {
   display: inline-block;
   float: none;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 0.85714286em;
-  font-style: normal;
+  font-style: 300;
   margin: 0 0 0 0.5em;
   padding: 0;
   color: rgba(0, 0, 0, 0.4);

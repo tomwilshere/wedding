@@ -101,7 +101,7 @@
 .ui.statistic > .value {
   font-family: 'calmetta', sans-serif;
   font-size: 4rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1em;
   color: #404040;
   text-transform: uppercase;
@@ -116,7 +116,7 @@
 .ui.statistic > .label {
   font-family: 'moret', sans-serif;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 700;
   color: #404040;
   text-transform: uppercase;
   text-align: center;
@@ -159,7 +159,7 @@
 .ui.statistic > .text.value {
   line-height: 1em;
   min-height: 2em;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 .ui.statistics .statistic > .text.value + .label,
