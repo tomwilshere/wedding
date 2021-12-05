@@ -1,0 +1,175 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.full-height {
+  min-height: calc(100vh - 45px);
+  height: 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+.full-height .container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#chins {
+  position: absolute !important;
+  bottom: 0;
+  z-index: 0;
+  margin-left: -100px;
+  width: 70%;
+}
+
+#champagne {
+  position: absolute !important;
+  bottom: 0;
+  margin-left: 750px;
+  max-height: 90%;
+}
+
+
+p {
+  line-height: 1.6em;
+}
+
+#home .grid {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#home h1 {
+  font-size: 140px;
+  vertical-align: top;
+}
+
+#home h1:first-child {
+  text-align: center;
+  margin-bottom: -40px
+}
+
+#home h1:nth-child(2) {
+  text-align: right;
+  margin-top: 0; margin-bottom: 0; line-height: 140px
+}
+
+#home-invite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+.button {
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.2));
+}
+
+#gifts {
+  background-size: 60%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .ui.large.menu {
+    font-size: 0.45rem;
+  }
+
+  #home h1 {
+    font-size: 85px;
+  }
+
+  #home h1:first-child {
+    text-align: left;
+  }
+
+  #home h1:nth-child(2) {
+    text-align: center;
+  }
+
+  #home .grid {
+    margin-top: 0;
+  }
+
+  #chins {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 22px !important;
+  }
+
+  .full-height {
+    min-height: calc(100vh - 40px);
+    height: inherit;
+  }
+
+  .ui.stackable.grid>.row>.column {
+    padding: 0.25rem 0
+  }
+
+  .ui.padded.segment {
+    padding: 1em 0.5em !important;
+  }
+
+  #gifts {
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  #gifts .ui.ui.ui.container:not(.fluid) {
+    margin-left: 0;
+  }
+
+  .ui.form { 
+    font-size: 0.75rem;
+  }
+
+  .ui.button {
+    font-size: 0.75rem;
+  }
+  
+  #champagne {
+    margin-left: 0;
+    height: 300px;
+  }
+
+  #rsvp .grid .column:nth-child(2) {
+    height: 300px;
+  }
+  
+  #footer .column {
+    padding: 0.2rem 0 !important;
+  }
+
+  #footer {
+    padding: 1em 0.5em;
+  }
+}
